@@ -1,1 +1,1 @@
-![Currency-Container]()
+![Currency-Container](https://github.com/Przemek8686/currency-container/blob/main/images/Animation.gif?raw=true)
