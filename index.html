@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantor Walut</title>
+    <meta property="og:image" content="Image/Kantor.png">
+    <link href="CSS/form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <script defer src="JS/script.js "></script>
+
+
+
+</head>
+
+<body class="body">
+    <form class="js-heading" class="form">
+        <p class="form__paragraph">Kantor Walut</p>
+
+        <label class="form__labelText">
+            Kwota w Euro:
+            <input class="js-euro" type="number" name="Euro" required placeholder="Wpisz kwote w Euro" step="any">
+        </label>
+        <label class="form__labelText">
+            Aktualny kurs:
+            <input class="js-pln" type="number" name="Złoty" required placeholder="Kurs EUR/PLN" step="any">
+            <span>PLN</span>
+
+        </label>
+        <p>
+            <button class="form__button">Przelicz</button>
+        </p>
+
+        <p class="form__paragraph--special">Kwota po Przeliczeniu na PLN:<strong class="js-result"></strong></p>
+    </form>
+
+    <script>console.log("Cześć")</script>
+</body>
+
+</html>
