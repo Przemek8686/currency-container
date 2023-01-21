@@ -1,19 +1,35 @@
-let euroElement = document.querySelector(".js-euro");
-
-let plnElement = document.querySelector(".js-pln");
-
-let headingElement = document.querySelector(".js-heading");
-
-let resultElement = document.querySelector(".js-result");
+{
 
 
-headingElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+    const headingElement = document.querySelector(".js-heading");
 
-    let euro = euroElement.value;
-    let pln = plnElement.value;
 
-    let result = euro * pln;
-    resultElement.innerText = result.toFixed(2);
-    console.log (euro * pln);
-});
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+
+        const plnElement = document.querySelector(".js-pln");
+
+
+        const resultElement = document.querySelector(".js-result");
+
+        const euroElement = document.querySelector(".js-euro");
+
+
+        const euro = euroElement.value;
+        const pln = plnElement.value;
+
+        const result = euro * pln;
+        resultElement.innerText = result.toFixed(2);
+
+    };
+
+    const init = () => {
+
+        headingElement.addEventListener("submit", onFormSubmit);
+
+    };
+
+    init();
+
+}
