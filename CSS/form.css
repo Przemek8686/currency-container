@@ -24,8 +24,8 @@
     padding: 10px auto;
     text-align: center;
     max-width: 400px;
-   margin-block-end: 20px;
-   
+    margin-block-end: 20px;
+
 
 
 
@@ -34,9 +34,9 @@
 
 .form__labelText {
     padding: 20px;
-    
+
     text-align: center;
-   
+
 
 
 
@@ -90,3 +90,16 @@
     background-color: mediumblue;
     color: floralwhite;
 }
+
+.readme {
+    color: brown;
+    padding: 40px;
+
+    text-decoration: none;
+
+}
+
+.readme:visited {
+    color: blue;
+}
+
