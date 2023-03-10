@@ -19,32 +19,42 @@
 </head>
 
 <body class="body">
-    <form class="js-heading" class="form">
-        <p class="form__paragraph">Kantor Walut</p>
+    <div class="container">
+        <form class="form js-form">
+            <h1 class="form__header">Kalkulator Walut</h1>
+            <p>
+                <label>
+                    <span class="form__labelText">
+                        Kwota w zł*:
+                        <input placeholder="Wpisz kwote w zł" class="form__field
+            js-amount" type="number" required step="0.01">
+                    </span>
+                </label>
+            </p>
+            <p>
+                <span class="form__labelText">Waluta*:</span>
+                </label>
+                <select class="form__field js-currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
 
-        <label class="form__labelText">
-            <div> Kwota w Euro:
-                <input class="js-euro" type="number" name="Euro" required placeholder="Wpisz kwote w Euro" step="any">
-            </div>
-        </label>
-        <label class="form__labelText">
-            <div>Aktualny kurs:
-                <input class="js-pln" type="number" name="Złoty" required placeholder="Kurs EUR/PLN" step="any">
-                <span>PLN</span>
-            </div>
-
-        </label>
-        <p>
-            <button class="form__button">Przelicz</button>
-        </p>
-
-        <p class="form__paragraph--special">Kwota po Przeliczeniu na PLN:<strong class="js-result"></strong></p>
-    </form>
-    <div>
-        <a class="readme" rel="noreferrer noopener" target="_blank"
-            href="https://github.com/Przemek8686/currency-container/blob/7ab1f8a4d2864f1ec69211cd26a5177e90a65f01/README.md">README.md</a>
+            </p>
+            <p>
+                <button class="form__button">Przelicz</button>
+            </p>
+            <p>
+                <label>
+                    <span class="form__labelText js-result">Wynik: N/A</span>
+                  </label>
+            </p>
+            
+                <span class="form__information">Wg.średniego kursu NBP z dn. 09.03.2023r.
+                </span>
+                </p>
+        </form>
     </div>
-    <script>console.log("Cześć")</script>
 </body>
 
 </html>
